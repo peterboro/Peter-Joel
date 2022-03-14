@@ -15,6 +15,7 @@
         <div class="form-group">
           <label id="name-label" for="name">Name</label>
           <input type="text" name="name" id="name" class="form-control " placeholder="Enter your name" required/>
+        </div>
         <div class="form-group">
           <label id="email" for="email"> Email </label>
           <input type="text" name="name" id="name" class="form-control " placeholder="Enter your name" required/>
@@ -43,12 +44,69 @@
           <label>
         <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
         </div>
+        <div class="form-group">
+          <p>What is your favorite feature of Microverse? </p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Collaborative Projects</option>
+            <option value="community">Community</option>
+          </select>
         </div>
-
+        <div class="form-group">
+          <p>
+            What would you like to see improved?
+            <span class="clue">(Select all that apply)</span>
+          </p>
+          <label><input
+              name="prefer"
+              value="curriculum"
+              type="checkbox"
+              class="input-checkbox"
+            />Curriculum</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="video-tutorials"
+              type="checkbox"
+              class="input-checkbox"
+            />Video Tutorials</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Forum-discussions"
+              type="checkbox"
+              class="input-checkbox"
+            />Forum Discussions
+            </label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Frequently-asked-questions"
+              type="checkbox"
+              class="input-checkbox"
+            />Frequently Asked Questions(FAQ)
+          </label>
         </div>
-
-
-
+        <div class="form-group">
+          <p>Any comments?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+    
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </div>
       </form>
 
     </div>
