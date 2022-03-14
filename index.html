@@ -23,9 +23,32 @@
           <label id="number" for="age"> Age </label>
           <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age"/>
         </div>
-          
+        <div class="form-group">
+          <p>Which option best decribes your current role?</p>
+          <select id="dropdown" name="Role" class="form-control" required>
+          <option Disabled selected value> Select Current Role</option>
+          <option Value= "Students">Students</option>
+          <option value="Job">Full time Job</option>
+          <option value="Learner">Full time Learner</option>
+          <option value="Prefer No">Prefer not say</option>
+          <option value="Other">Other</option>
+          </select>
         </div>
-        
+        <div class="form-group">
+          <p>Would you recommend Microverse to a friend?</p>
+          <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+          <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+          <label>
+        <input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+        </div>
+        </div>
+
+        </div>
+
+
+
       </form>
 
     </div>
