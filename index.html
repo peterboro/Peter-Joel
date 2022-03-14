@@ -17,13 +17,29 @@
           <input type="text" name="name" id="name" class="form-control " placeholder="Enter your name" required/>
         </div>
         <div class="form-group">
-          <label id="email" for="email"> Email </label>
-          <input type="email" name="email" id="email" class="form-control " placeholder="Enter your email" required/>
-        </div>
-        <div class="form-group">
-          <label id="number" for="age"> Age </label>
-          <input type="number" name="age" id="number" min="18" max="99" class="form-control" placeholder="Age"/>
-        </div>
+      <label id="email-label" for="email">Email</label>
+      <input type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+  <label id="number-label" for="number"
+    >Age<span class="clue">(optional)</span></label
+  >
+  <input
+    type="number"
+    name="age"
+    id="number"
+    min="10"
+    max="99"
+    class="form-control"
+    placeholder="Age"
+  />
+</div>
         <div class="form-group">
           <p>Which option best decribes your current role?</p>
           <select id="dropdown" name="Role" class="form-control" required>
@@ -100,7 +116,7 @@
             placeholder="Enter your comment here..."
           ></textarea>
         </div>
-    
+
         <div class="form-group">
           <button type="submit" id="submit" class="submit-button">
             Submit
